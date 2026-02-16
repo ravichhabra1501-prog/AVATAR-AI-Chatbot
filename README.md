@@ -1,18 +1,8 @@
-# Welcome to your Lovable project
+# AVATAR AI Chatbot
 
-## Project info
-
-**URL**: https://lovable.dev/projects/ef8b6515-b116-45fd-bdd2-bfd2fb6b0d05
+An immersive AI chatbot powered by OpenAI's GPT-4, built with React, TypeScript, and Vite.
 
 ## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/ef8b6515-b116-45fd-bdd2-bfd2fb6b0d05) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
 
 **Use your preferred IDE**
 
@@ -62,8 +52,10 @@ This project is built with .
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/ef8b6515-b116-45fd-bdd2-bfd2fb6b0d05) and click on Share -> Publish.
+This project is configured for deployment on **Netlify**. Simply push your code to GitHub and connect your repository to Netlify for automatic deployments.
 
-## I want to use a custom domain - is that possible?
+### Environment Variables
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+Add the following environment variable to your Netlify deployment settings:
+
+- `VITE_OPENAI_API_KEY`: Your OpenAI API key (get it from https://platform.openai.com/api-keys)
