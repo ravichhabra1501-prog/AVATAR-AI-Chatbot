@@ -1,6 +1,11 @@
-const OPENAI_API_KEY =
-  "sk-proj-L1ottyKyUuXoGyXUmYImY_mti-X6wM_rwl5S2gIcTZz6XPNpI6NSr9xwXlKFLr38Oh32-kwiChT3BlbkFJMn0tantLdAD3oZxHTXckRfmVFEvasELaJ4EUvpp3ArVNMC6fnU51RD2W356UuLBPkDS2m7qeqYA";
+const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
 const API_URL = "https://api.openai.com/v1/chat/completions";
+
+if (!OPENAI_API_KEY) {
+  throw new Error(
+    "VITE_OPENAI_API_KEY environment variable is not set. Please add it to your .env file or environment.",
+  );
+}
 
 export type Message = {
   role: "user" | "assistant" | "system";
